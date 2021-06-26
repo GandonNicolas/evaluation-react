@@ -1,9 +1,8 @@
-import './App.css';
 import SerieList from './SerieList'
 import React, { useState, useEffect } from 'react';
+import Header from './Header'
 
 export default function App() {
-
     const [data, setData] = useState([])
 
     useEffect(() => {
@@ -12,10 +11,11 @@ export default function App() {
         .then(data => setData(data))
     }, [])
   
-    console.log(data);
+    // console.log(data);
 
     return (
         <div>
+            <Header />
             <SerieList serieList = { data } />
         </div>
     )
