@@ -15,7 +15,7 @@ export default function App() {
 
     return (
         <div>
-            <Header />
+            <Header title = { data}/>
             <SerieList serieList = { data } />
         </div>
     )

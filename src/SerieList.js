@@ -1,6 +1,6 @@
 import React from 'react'
-
 import Serie from './Serie'
+
 
 export default function SerieList (props) {
 

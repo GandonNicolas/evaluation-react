@@ -1,5 +1,5 @@
 import './css/serie.css'
-import LikeBtn from "./LikeBtn";
+import FavBtn from "./FavBtn";
 
 export default function Serie (props) {
     const { item } = props
@@ -17,7 +17,7 @@ export default function Serie (props) {
                         <div>{item.creation}</div>
                         <div>{item.seasons} Seasons</div>
                         <div><span>Distribution : </span>{item.network}</div>
-                        <LikeBtn />
+                        <FavBtn id = {item.id} title = {item.title} favori ={item.user.favorited}/>
                     </div>
                 </div>
             </div> 
