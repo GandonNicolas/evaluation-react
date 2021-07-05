@@ -1,5 +1,6 @@
 import './css/serie.css'
-import FavBtn from "./FavBtn";
+import FavBtn from "./FavBtn"
+
 
 export default function Serie (props) {
     const { item } = props
